@@ -1,5 +1,5 @@
 .glavni-div {
-  background-color: rgb(204, 53, 53);
+  background-color: rgb(53, 36, 36);
   margin: auto auto;
   width: 25%;
   height: 50%;
@@ -12,6 +12,7 @@
   width: 95%;
   margin: 40px auto;
   flex: 1;
+  background-color: wheat;
 }
 .dugmad {
   display: grid;
@@ -19,8 +20,22 @@
   box-sizing: border-box;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  border: 2px solid yellow;
   flex: 3;
+  border-radius: 15px;
+  border: none;
+}
+.fotkica {
+  width: 40%;
+  object-fit: contain;
+  display: block;
+  transition: 0.15s;
+}
+.fotkica:hover {
+  width: 50%;
+  
+}
+.fotkica:active {
+  width: 40%;
 }
 .veliki {
   width: 100%;
@@ -34,5 +49,22 @@ html, body {
   margin: 0; 
 }
 button {
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(53, 36, 36);
+  color: wheat;
+  border: none;
+  transition: 0.15s;
+}
+button:hover {
+  font-size: 40px;
+}
+button:active {
+  font-size: 30px;
 }
