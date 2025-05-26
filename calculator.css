@@ -13,6 +13,13 @@
   margin: 40px auto;
   flex: 1;
   background-color: wheat;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 45px;
+}
+.neprikaz {
+  display: none;
 }
 .dugmad {
   display: grid;
@@ -20,7 +27,7 @@
   box-sizing: border-box;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  flex: 3;
+  flex: 4;
   border-radius: 15px;
   border: none;
 }
@@ -61,6 +68,7 @@ button {
   color: wheat;
   border: none;
   transition: 0.15s;
+  border-radius: 15px;
 }
 button:hover {
   font-size: 40px;
