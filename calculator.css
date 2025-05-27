@@ -17,6 +17,7 @@
   justify-content: right;
   align-items: center;
   font-size: 45px;
+  overflow: hidden;
 }
 .neprikaz {
   display: none;
