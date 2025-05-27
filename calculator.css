@@ -76,3 +76,6 @@ button:hover {
 button:active {
   font-size: 30px;
 }
+p {
+  margin: 0;
+}
