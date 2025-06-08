@@ -53,7 +53,10 @@ function dodajZnak(znak) {
     
   }
   else if (znak === "%" || znak === "*" || znak === "-" || znak === "+" || znak === "/" || znak === "."){
-    if (document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "%" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "*" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "/" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "+" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "-" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === ".") {
+    if (document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === undefined) {
+
+    }
+    else if (document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "%" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "*" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "/" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "+" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === "-" || document.querySelector('.prikaz').innerHTML[document.querySelector('.prikaz').innerHTML.length - 1] === ".") {
       
       document.querySelector('.prikaz').innerHTML = document.querySelector('.prikaz').innerHTML.slice(0, -1);
       document.querySelector('.neprikaz').innerHTML = document.querySelector('.neprikaz').innerHTML.slice(0, -1);
